@@ -1,4 +1,5 @@
 /**
+ * @description
  * Doubly linked list implementation.
  * Indexed list.
  * Only unique values are supported in this list.
