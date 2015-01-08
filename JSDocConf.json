@@ -1,0 +1,30 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": ["./src/js"],
+    "includePattern": ".+\\.js(doc)?$",
+    "excludePattern": "docs"
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": true,
+    "systemName": "remoteFileExplorer",
+    "footer": "Created by Yevhen Kalinichenko",
+    "copyright": "2015",
+    "navType": "vertical",
+    "theme": "spacelab",
+    "linenums": true,
+    "collapseSymbols": true,
+    "inverseNav": false
+  },
+  "opts": {
+    "template": "D:\\!Projects\\jsdocgenerator\\jsdoc\\templates\\docstrap\\template",
+    "encoding": "utf8",
+    "destination": "docs/js",
+    "recurse": true,
+    "private": true
+  }
+}
