@@ -268,7 +268,7 @@ List.prototype = {
   remove: function(element){
     var listNode, nodeValue;
 
-    if(!this.elementIndexesMap.has(element)){
+    if(!this.has(element)){
       throw new Error('Failed to remove element that does not exist in the List: ' + element);
     }
 
@@ -460,9 +460,10 @@ List.prototype = {
    * Reindex number indexes of the List.
    * We must perform this operation when the list is changed somehow.
    * List tries to perform this operation in lazy way.
-   * For example we can add to the list and if are not working with indexes - this method will not be called.
+   * For example we can add to the list and if we are not working with indexes(get by index, remove by index) - this method will not be called.
    * But when we are trying to get element by index - this method will be called ones. If there are some changes between
    * getting element by index - indexation will be done again.
+   * Remove by index will call this method anytime.
    *
    * @private
    */
